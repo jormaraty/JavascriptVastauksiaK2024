@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 2</title>
+</head>
+<body>
+
+<h2>Tervehdys käyttäjälle</h2>
+
+<!-- Varataan tervehdykselle oma kappale html-sivulta -->
+<p id="target"></p>
+
+<p>
+    Hyvää päivän jatkoa!
+</p>
+
+<script>
+    'use strict';
+
+    // esitellään muuttuja, johon käyttäjän syöte sijoitetaan.
+    let nimi;
+    // kysytään käyttäjältä tekstiä, prompt()-funktion avulla
+    nimi = prompt('Anna nimesi: ');
+    // kootaan tervehdysteksti, esitellään muuttuja samalla kun siihen sijoitetaan arvo.
+    let tervehdys = 'Hello, ' + nimi + '!';
+
+    // esitellään tulostuskohta nyt vakiona (paikka ei muutu),
+    // tulostuskohtaan etsitään document-olion avulla html-sivun elementti,
+    // jonka id-arvo on target.
+    const tulostuskohta = document.querySelector('#target');
+
+    // tulostetaan vastaus web-sivulle äsken etsittyyn paikkaan
+    tulostuskohta.innerHTML = tervehdys;
+
+</script>
+
+</body>
+</html>
