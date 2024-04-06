@@ -32,8 +32,8 @@ else if (vuosi % 4 == 0) {
 // muodostetaan html-sivulle lähtevä vastauksen alkuosa
 let vastaus = 'Vuosi ' + vuosi;
 // määritetään vastauksen loppuosa, lisätään alkusan perään (+=)
-if (onKarkaus == true) {
-    // yllä oleva ehto perinteisenä varsiona: if (omKarkaus == true) {
+if (onKarkaus) {
+    // yllä oleva ehto perinteisenä varsiona: if (onKarkaus == true) {
     vastaus += ' ON karkausvuosi';
 } else {
     vastaus += ' EI ole karkausvuosi';
