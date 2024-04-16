@@ -132,7 +132,7 @@ for (let kuva of picArray)  {
   articleElem.appendChild(figureElem);
   articleElem.appendChild(pElem);
 
-  // ** lisätään valmisarticle web-sivulle
+  // ** lisätään valmis article web-sivulle
   targetElem.appendChild(articleElem);
 }
 
