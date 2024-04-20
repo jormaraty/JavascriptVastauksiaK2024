@@ -20,7 +20,7 @@ for (let i = 0; i < lkm; i++)  {
 // järjestetään taulukon nimet aakkosjärjestykseen
 osallistujat.sort();
 
-// lisätään taulukosta yksi nimi kerrallaan html-sivun listan alkiksi ->
+// lisätään taulukosta yksi nimi kerrallaan html-sivun listan alkioksi ->
 // -> taulukon nimi täytyy laittaa li-tagien sisään
 // -> innerHTML kanssa käytetään '+=' -> uusi nimi tulee entisten perään
 
